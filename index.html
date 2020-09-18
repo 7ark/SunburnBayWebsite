@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sunburn Bay</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ceviche+One&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+</head>
+
+<body>
+    <div>
+        <img class="background" src="images/PreviewImage1.jpg" />
+        <img class="background background-blurred" src="images/PreviewImage1.jpg" />
+        <div>
+            <img class="fillBackground" src="images/Background.jpg" />
+            <img class="center logo" src="images/Sunburn_Bay_Logo.png" />
+        </div>
+    </div>
+    <div class="intro center">
+        <h1 id="Entertainment" class="center intro-text intro-text-pressed" onclick="SwitchSlide(0)">Entertainment</h1>
+        <h1 id="Location" class="center intro-text" onclick="SwitchSlide(1)">Location & Tickets</h1>
+        <h1 id="AboutUs" class="center intro-text" onclick="SwitchSlide(2)">About Us</h1>
+    </div>
+
+    <script>
+        function SwitchSlide(index) {
+            var aboutUs = document.getElementById("AboutUs");
+            var entertainment = document.getElementById("Entertainment");
+            var location = document.getElementById("Location");
+            var list = [entertainment, location, aboutUs];
+            for (var i = 0; i < list.length; i++) {
+                if (i == index) {
+                    list[i].classList.add("intro-text-pressed");
+                    list[i].scrollIntoView();
+                }
+                else {
+                    if (list[i].classList.contains("intro-text-pressed")) {
+                        list[i].classList.remove("intro-text-pressed");
+                    }
+                }
+            }
+
+            var car = $(".main-display").data('carousel');
+            car.toSlide(index);
+        }
+    </script>
+
+    <div id="BigCarousel" class="main-display" data-role="carousel"
+         data-bullets="false"
+         data-controls="false"
+         data-auto-start="false"
+         data-width="60%"
+         data-height="2000px"
+         data-effect-func="easeInOutQuart"
+         data-duration="1000">
+        <div id="DisplayEntertainment" class="slide">
+            <div class="center main main-entertainment">
+                <video width="320" height="240" controls autoplay muted>
+                    <source src="images/DisplayVideo.mp4" type="video/mp4" />
+                    Problem Loading Video
+                </video>
+                <h1 class="center bold shadow">Chicago's Premiere Waterpark Experience</h1>
+                <p class="para">
+                    Plan a getaway they'll never forget at Chicago's biggest and best waterpark! Sunburn Bay<sup>TM</sup>
+                    water park offers 50,000 square feet of excitement and fun for the entire family. You'll find a
+                    variety of fun throughout the park from the [Big Scary Ride] to the more relaxing drift along the [Winding river].
+                </p>
+                <div class="imgalign-left">
+                    <p class="para">
+                        Purchase your Sunburn Bay<sup>TM</sup> tickets now to plan out your days of fun! Enjoy our private resort
+                        options, and multi-day pass deals now!<br /><button class="button" onclick="SwitchSlide(1)">Explore Ticket Options</button>
+                    </p>
+                    <img src="images/Resort.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img src="images/PreviewImage1.jpg" width="400" />
+                    <p class="para">
+                        Purchase a Bayside Dining Plan and you can take advantage of all Sunburn Bay's<sup>TM</sup> food options have to offer.
+                        Starting at $49.99 you can choose from several participating restaurants at Sunburn Bay.<sup>TM</sup> Upgrade your pass
+                        to get unlimited refills in your Sunburn Bay<sup>TM</sup> Souvenir Cup.
+                    </p>
+                </div>
+                <div class="imgalign-left">
+                    <p class="para">
+                        Relax, unwind, and enjoy the sights at your very own private cabana in paradise with luxurious seating, on-demand service 
+                        and more. Each reserved area accommodates up to 8 guests and comes with a small refrigerator stocked with water, fruits and 
+                        snacks, along with a locker service and concierge service of exclusive menu items delivered directly to your cabana.
+                    </p>
+                    <img src="images/Resort.jpg" width="400" />
+                </div>
+            </div>
+        </div>
+        <div id="DisplayLocation" class="slide">
+            <div class="center main main-location">
+                <h1>Location</h1>
+                <div data-role="cube"></div>
+            </div>
+        </div>
+        <div id="DisplayAboutUs" class="slide">
+            <div class="center main main-aboutus">
+                <h1>About Us</h1>
+                <div data-role="cube"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outro center"></div>
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</body>
+
+</html>
