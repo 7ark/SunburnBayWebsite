@@ -14,41 +14,23 @@
 
 <body>
     <div>
-        <img class="background" src="images/PreviewImage1.jpg" />
-        <img class="background background-blurred" src="images/PreviewImage1.jpg" />
+
+    </div>
+    <div class="pad">
         <div>
-            <img class="fillBackground" src="images/Background.jpg" />
-            <img class="center logo" src="images/Sunburn_Bay_Logo.png" />
+            <img class="background" src="images/PreviewImage1.jpg" />
+            <img class="background background-blurred" src="images/PreviewImage1.jpg" />
+            <div>
+                <img class="fillBackground" src="images/Background.jpg" />
+                <img class="center logo" src="images/Sunburn_Bay_Logo.png" />
+            </div>
+        </div>
+        <div class="intro center">
+            <h1 id="Entertainment" class="center intro-text intro-text-pressed" onclick="SwitchSlide(0)">Entertainment</h1>
+            <h1 id="Location" class="center intro-text" onclick="SwitchSlide(1)">Location & Tickets</h1>
+            <h1 id="AboutUs" class="center intro-text" onclick="SwitchSlide(2)">About Us</h1>
         </div>
     </div>
-    <div class="intro center">
-        <h1 id="Entertainment" class="center intro-text intro-text-pressed" onclick="SwitchSlide(0)">Entertainment</h1>
-        <h1 id="Location" class="center intro-text" onclick="SwitchSlide(1)">Location & Tickets</h1>
-        <h1 id="AboutUs" class="center intro-text" onclick="SwitchSlide(2)">About Us</h1>
-    </div>
-
-    <script>
-        function SwitchSlide(index) {
-            var aboutUs = document.getElementById("AboutUs");
-            var entertainment = document.getElementById("Entertainment");
-            var location = document.getElementById("Location");
-            var list = [entertainment, location, aboutUs];
-            for (var i = 0; i < list.length; i++) {
-                if (i == index) {
-                    list[i].classList.add("intro-text-pressed");
-                    list[i].scrollIntoView();
-                }
-                else {
-                    if (list[i].classList.contains("intro-text-pressed")) {
-                        list[i].classList.remove("intro-text-pressed");
-                    }
-                }
-            }
-
-            var car = $(".main-display").data('carousel');
-            car.toSlide(index);
-        }
-    </script>
 
     <div id="BigCarousel" class="main-display" data-role="carousel"
          data-bullets="false"
@@ -99,7 +81,7 @@
             <div class="center main main-location">
                 <img class="main-image" src="images/Map.png" />
                 <p class="para">
-                    Sunburn Bay<sup>TM</sup> is located in the heart of the Chicagoland area. You're on your way to a carefree tropical lifestyle at 
+                    Sunburn Bay<sup>TM</sup> is located in the heart of the Chicagoland area. You're on your way to a carefree tropical lifestyle at
                     Sunburn Bay<sup>TM</sup> soon. Purchase your tickets and explore exclusive extras to make your trip even more memorable.
                 </p>
                 <div>
@@ -117,13 +99,114 @@
         </div>
         <div id="DisplayAboutUs" class="slide">
             <div class="center main main-aboutus">
-                <h1>About Us</h1>
-                <div data-role="cube"></div>
+                <h1 class="center bold shadow">Chief Engineers</h1>
+                <div class="imgalign-right">
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1287816247065874432/8_OCmjsT_400x400.jpg" width="400" />
+                    <p class="para">
+                        <b>Cory Koseck (7ark) | Chief Architect<br /></b>
+                        Cory is head of the Architecture Division here at Sunburn Bay<sup>TM</sup> and put care into all facets of the park's design. From a
+                        broad overview of how the park should feel, to the design of the very paths you'll walk on, Cory worked to make sure you feel at home
+                        here at Sunburn Bay.<sup>TM</sup>
+                    </p>
+                </div>
+                <div class="imgalign-left">
+                    <p class="para">
+                        <b>Coachi | Chief Design Coordinator<br /></b>
+                        Coachi is the Chief of Design, and put care into every nook and cranny you'll see here at Sunburn Bay.<sup>TM</sup> They handled not
+                        only the literal construction of the park, but also the overall design and vision for all of the beautiful pieces of the world you'll
+                        enter when you visit Sunburn Bay.<sup>TM</sup>
+                    </p>
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1287785793126313985/LXHs6c9S_400x400.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1220867672725835776/aU_6gsQe_400x400.jpg" width="400" />
+                    <p class="para">
+                        <b>Deadknife | Chief of Construction<br /></b>
+                        Deadknife leads as our Chief of Construction, and has put their talented efforts towards creating many of the wonderful pieces you'll
+                        see all throughout Sunburn Bay.<sup>TM</sup> They handle the construction of all the rides you'll see, as well as many of the smaller
+                        details throughout, such as trash cans, lamp posts, reclining chairs, and even the beloved statue of Bongo the Kangaroo.
+                    </p>
+                </div>
+                <h1 class="center bold shadow">Outside Contractors</h1>
+                <div class="imgalign-left">
+                    <p class="para-small">
+                        <b>Yanzl | Construction Contractor<br /></b>
+                        Yanzl provided many of our set pieces for the world of Sunburn Bay,<sup>TM</sup> including many of our rock fixtures, exotic plant life, and more.
+                    </p>
+                    <img class="minor-pfp" src="https://pbs.twimg.com/profile_images/1160425931/500xmannco2_400x400.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img class="minor-pfp" src="https://pbs.twimg.com/profile_images/1160425931/500xmannco2_400x400.jpg" width="400" />
+                    <p class="para-small">
+                        <b>Jeremy | Logo Designer<br /></b>
+                        Jeremy was contracted to create unique signs to bring life to the park, and he excelled. Creating not only the Sunburn Bay<sup>TM</sup> logo, he created
+                        many of the parks shops and ride signs, bringing fun and joy to the park's atmosphere.
+                    </p>
+                </div>
+                <h1 class="center bold shadow">Quality Assurance Engineers</h1>
+                <h4 class="center bold">
+                    This is a list to thank those who participated in early screenings of the park, and helped it to become the fantastic waterpark
+                    that it is today!
+                </h4>
+                <p class="para-small">
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Seth</b><br />
+                        <b class="center bold shadow center-text">Squidski</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Slimek</b><br />
+                        <b class="center bold shadow center-text">T-R3x3r</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Peake</b><br />
+                        <b class="center bold shadow center-text">Abp</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Sumo</b><br />
+                        <b class="center bold shadow center-text">Alfred</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Xayir</b><br />
+                        <b class="center bold shadow center-text">Ynel</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Kale</b><br />
+                        <b class="center bold shadow center-text">Sir Thomas</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Celery</b><br />
+                        <b class="center bold shadow center-text"></b><br />
+                    </div><br />
+                </p>
             </div>
         </div>
     </div>
 
     <div class="outro center"></div>
+
+
+    <script>
+        function SwitchSlide(index) {
+            var aboutUs = document.getElementById("AboutUs");
+            var entertainment = document.getElementById("Entertainment");
+            var location = document.getElementById("Location");
+            var list = [entertainment, location, aboutUs];
+            for (var i = 0; i < list.length; i++) {
+                if (i == index) {
+                    list[i].classList.add("intro-text-pressed");
+                    list[i].scrollIntoView();
+                }
+                else {
+                    if (list[i].classList.contains("intro-text-pressed")) {
+                        list[i].classList.remove("intro-text-pressed");
+                    }
+                }
+            }
+
+            var car = $(".main-display").data('carousel');
+            car.toSlide(index);
+        }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

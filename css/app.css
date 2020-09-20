@@ -12,9 +12,18 @@ body {
     background-color: burlywood;
 }
 
-h1 {
+h1, h4, li {
     text-align: center;
     font-family: 'Bebas Neue';
+}
+
+.center-text{
+    text-align:center;
+    font-size: 25px;
+}
+
+.pad{
+    overflow:visible;
 }
 
 .para {
@@ -22,6 +31,12 @@ h1 {
     font-family: 'Bebas Neue';
     margin: 0 50px;
     font-size: 30px;
+}
+.para-small {
+    display: block;
+    font-family: 'Bebas Neue';
+    margin: 0 50px;
+    font-size: 20px;
 }
 
 .para-left {
@@ -54,6 +69,11 @@ h1 {
     margin-right: -30px;
     text-align: right;
     margin-top: 40px;
+}
+
+.dual-item-list {
+    display: flex;
+    align-items: center;
 }
 
 .center {
@@ -110,6 +130,7 @@ h1 {
     text-decoration: underline;
     text-decoration-color: darkorange;
     z-index: 5;
+    cursor:pointer;
 }
 
 .intro-text-pressed {
@@ -168,6 +189,20 @@ video {
     height: auto !important;
 }
 
+.pfp{
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.minor-pfp {
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
 .bold{
     font-weight:bold;
 }
@@ -198,5 +233,5 @@ video {
 }
 
 .main-aboutus {
-    min-height: 1400px;
+    min-height: 2000px;
 }
