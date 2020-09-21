@@ -1,6 +1,7 @@
-﻿*{
+﻿* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -12,9 +13,13 @@ body {
     background-color: burlywood;
 }
 
-h1, h4, li {
+h1, h2, h4, li {
     text-align: center;
     font-family: 'Bebas Neue';
+}
+
+.big{
+    font-size: 80px;
 }
 
 .center-text{
@@ -99,8 +104,30 @@ h1, h4, li {
 }
 
 .background-blurred {
-    -webfit-filter: blur(5px);
-    filter: blur(5px);
+    -webfit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.container{
+    margin:0 auto;
+    align-items:center;
+    text-align:center;
+}
+
+li {
+    display: inline-block;
+    font-size: 2.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+}
+
+li span {
+    display: block;
+    font-size: 6.5rem;
+    font-family: 'Bebas Neue';
+    width: 200px;
 }
 
 .steam-button{
@@ -124,19 +151,7 @@ h1, h4, li {
     width: auto;
     display: flex;
     text-align: center;
-}
-
-.intro-text:hover {
-    text-decoration: underline;
-    text-decoration-color: darkorange;
-    z-index: 5;
-    cursor:pointer;
-}
-
-.intro-text-pressed {
-    text-decoration: underline;
-    text-decoration-color: darkred !important;
-    z-index: 7;
+    color: gray;
 }
 
 .floatleft{
