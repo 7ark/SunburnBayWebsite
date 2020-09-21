@@ -104,8 +104,7 @@ h1, h2, h4, li {
 }
 
 .background-blurred {
-    -webfit-filter: blur(10px);
-    filter: blur(10px);
+
 }
 
 .container{
