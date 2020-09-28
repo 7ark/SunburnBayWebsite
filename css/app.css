@@ -1,7 +1,6 @@
-﻿* {
+﻿*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html{
@@ -13,13 +12,9 @@ body {
     background-color: burlywood;
 }
 
-h1, h2, h4, li {
+h1, h4, li {
     text-align: center;
     font-family: 'Bebas Neue';
-}
-
-.big{
-    font-size: 80px;
 }
 
 .center-text{
@@ -27,8 +22,28 @@ h1, h2, h4, li {
     font-size: 25px;
 }
 
+.white-link{
+    color: white;
+}
+
 .pad{
     overflow:visible;
+}
+
+.good-font {
+    font-family: 'Bebas Neue';
+}
+
+.img-outline {
+    border: 5px solid rgb(44, 44, 44);
+}
+
+.para-block {
+    text-align: left !important;
+}
+
+.para-big {
+    font-size: 35px !important;
 }
 
 .para {
@@ -99,34 +114,18 @@ h1, h2, h4, li {
     width: 100%;
 }
 
+.ticket {
+    width: 75%;
+    margin-top:10px;
+}
+
 .no-hover{
     text-decoration:none !important;
 }
 
 .background-blurred {
-
-}
-
-.container{
-    margin:0 auto;
-    align-items:center;
-    text-align:center;
-}
-
-li {
-    display: inline-block;
-    font-size: 2.5em;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue';
-}
-
-li span {
-    display: block;
-    font-size: 6.5rem;
-    font-family: 'Bebas Neue';
-    width: 200px;
+    -webfit-filter: blur(5px);
+    filter: blur(5px);
 }
 
 .steam-button{
@@ -150,7 +149,19 @@ li span {
     width: auto;
     display: flex;
     text-align: center;
-    color: gray;
+}
+
+.intro-text:hover {
+    text-decoration: underline;
+    text-decoration-color: darkorange;
+    z-index: 5;
+    cursor:pointer;
+}
+
+.intro-text-pressed {
+    text-decoration: underline;
+    text-decoration-color: darkred !important;
+    z-index: 7;
 }
 
 .floatleft{
@@ -201,6 +212,32 @@ video {
     margin: 0 auto;
     width: 100% !important;
     height: auto !important;
+}
+
+.black-link{
+    color:black;
+}
+
+.iframe-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.iframe-embed-wrapper {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.iframe-embed-responsive-16by9 {
+    padding-bottom: 56.25%;
 }
 
 .pfp{

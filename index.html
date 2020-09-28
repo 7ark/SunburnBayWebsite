@@ -26,9 +26,9 @@
             </div>
         </div>
         <div class="intro center">
-            <h1 id="Entertainment" class="center intro-text intro-text-pressed">Entertainment</h1>
-            <h1 id="Location" class="center intro-text">Location & Tickets</h1>
-            <h1 id="AboutUs" class="center intro-text">About Us</h1>
+            <h1 id="Entertainment" class="center intro-text intro-text-pressed" onclick="SwitchSlide(0)">Entertainment</h1>
+            <h1 id="Location" class="center intro-text" onclick="SwitchSlide(1)">Location & Tickets</h1>
+            <h1 id="AboutUs" class="center intro-text" onclick="SwitchSlide(2)">About Us</h1>
         </div>
     </div>
 
@@ -42,49 +42,195 @@
          data-duration="1000">
         <div id="DisplayEntertainment" class="slide">
             <div class="center main main-entertainment">
-                <h1 class="center bold shadow big">Site Under Construction</h1>
-                <br />
-                <h2 class="center bold shadow">Time Until Park Opening</h2>
-                <div class="container">
-                    <ul>
-                        <li><span id="days">00</span>days</li>
-                        <li><span id="hours">00</span>Hours</li>
-                        <li><span id="minutes">00</span>Minutes</li>
-                        <li><span id="seconds">00</span>Seconds</li>
-                    </ul>
+                <div class="iframe-embed-wrapper iframe-embed-responsive-16by9">
+                    <iframe class="iframe-embed" src="https://www.youtube.com/embed/KmDLGGIzWNs?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <h1 class="center bold shadow">Chicago's Premiere Waterpark Experience</h1>
+                <p class="para">
+                    Plan a getaway they'll never forget at Chicago's biggest and best waterpark! Sunburn Bay<sup>TM</sup>
+                    water park offers 50,000 square feet of excitement and fun for the entire family. You'll find a
+                    variety of fun throughout the park from <i>Serpent's Pass</i> to the more relaxing drift along the <i>Sunken Riches Winding River</i>.
+                </p>
+                <div class="imgalign-right">
+                    <img class="img-outline" src="images/Resort.jpg" width="400" />
+                    <p class="para para-block para-big">
+                        Purchase your Sunburn Bay<sup>TM</sup> tickets now to plan out your days of fun! Enjoy our private resort
+                        options, and multi-day pass deals now!<br /><button class="button" onclick="SwitchSlide(1)">Explore Ticket Options</button>
+                    </p>
+                </div>
+                <div class="imgalign-right">
+                    <img class="img-outline" src="images/Dining.jpg" width="400" />
+                    <p class="para para-block para-big">
+                        Purchase a Bayside Dining Plan and you can take advantage of all Sunburn Bay's<sup>TM</sup> food options have to offer.
+                    </p>
+                </div>
+                <div class="imgalign-right">
+                    <img class="img-outline" src="images/Cabanas.jpg" width="400" />
+                    <p class="para para-block para-big">
+                        Relax, unwind, and enjoy the sights at your very own private cabana in paradise with luxurious seating, on-demand service
+                        and more.
+                    </p>
+                </div>
+                <div class="imgalign-right">
+                    <img class="img-outline" src="images/Example.jpg" width="400" />
+                    <p class="para para-block para-big">
+                        At Sunburn Bay<sup>TM</sup> you'll enjoy plenty of fun rides for the entire family, <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2242386354">book your visit today!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="DisplayLocation" class="slide">
+            <div class="center main main-location">
+                <img class="main-image" src="images/Map.png" />
+                <p class="para">
+                    Sunburn Bay<sup>TM</sup> is located in the heart of the Chicagoland area. You're on your way to a carefree tropical lifestyle at
+                    Sunburn Bay<sup>TM</sup> soon. Purchase your tickets and explore exclusive extras to make your trip even more memorable.
+                </p>
+                <div>
+                    <a target="_blank" class="no-hover" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2242386354">
+                        <button class="command-button icon-left success steam-button">
+                            <span class="mif-share icon"></span>
+                            <span class="caption">
+                                Sunburn Bay<sup>TM</sup>
+                                <small>View on the Steam Workshop</small>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+                <img class="ticket center" src="images/SunburnTicket.png" />
+            </div>
+        </div>
+        <div id="DisplayAboutUs" class="slide">
+            <div class="center main main-aboutus">
+                <h1 class="center bold shadow">Chief Engineers</h1>
+                <div class="imgalign-right">
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1287816247065874432/8_OCmjsT_400x400.jpg" width="400" />
+                    <p class="para">
+                        <b><a target="_blank" class="black-link" href="https://twitter.com/The7ark">Cory Koseck (7ark) | Chief Architect</a><br /></b>
+                        Cory is head of the Architecture Division here at Sunburn Bay<sup>TM</sup> and put care into all facets of the park's design. From a
+                        broad overview of how the park should feel, to the design of the very paths you'll walk on, Cory worked to make sure you feel at home
+                        here at Sunburn Bay.<sup>TM</sup>
+                    </p>
+                </div>
+                <div class="imgalign-left">
+                    <p class="para">
+                        <b><a target="_blank" class="black-link"  href="https://twitter.com/Coachi_">Coachi | Chief Design Coordinator</a><br /></b>
+                        Coachi is the Chief of Design, and put care into every nook and cranny you'll see here at Sunburn Bay.<sup>TM</sup> They handled not
+                        only the literal construction of the park, but also the overall design and vision for all of the beautiful pieces of the world you'll
+                        enter when you visit Sunburn Bay.<sup>TM</sup>
+                    </p>
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1287785793126313985/LXHs6c9S_400x400.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img class="pfp" src="https://pbs.twimg.com/profile_images/1220867672725835776/aU_6gsQe_400x400.jpg" width="400" />
+                    <p class="para">
+                        <b><a target="_blank" class="black-link"  href="https://twitter.com/DeadKnife78">Deadknife | Chief of Construction</a><br /></b>
+                        Deadknife leads as our Chief of Construction, and has put their talented efforts towards creating many of the wonderful pieces you'll
+                        see all throughout Sunburn Bay.<sup>TM</sup> They handle the construction of all the rides you'll see, as well as many of the smaller
+                        details throughout, such as trash cans, lamp posts, reclining chairs, and even the beloved statue of Bongo the Kangaroo.
+                    </p>
+                </div>
+                <h1 class="center bold shadow">Outside Contractors</h1>
+                <div class="imgalign-left">
+                    <p class="para-small">
+                        <b><a target="_blank" class="black-link"  href="https://twitter.com/yanzl_">Yanzl | Construction Contractor</a><br /></b>
+                        Yanzl provided many of our set pieces for the world of Sunburn Bay,<sup>TM</sup> including many of our rock fixtures, exotic plant life, and more.
+                    </p>
+                    <img class="minor-pfp" src="https://pbs.twimg.com/profile_images/1160425931/500xmannco2_400x400.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img class="minor-pfp" src="https://media-exp1.licdn.com/dms/image/C5603AQFrD-pqGlAmcw/profile-displayphoto-shrink_800_800/0?e=1606348800&v=beta&t=6j3n06ZvDHC4vO17hq8ttb5tlMvZzhJ6YLzYhQBWOas" width="400" />
+                    <p class="para-small">
+                        <b>Jeremy Cook | Logo Designer<br /></b>
+                        Jeremy was contracted to create unique signs to bring life to the park, and he excelled. Creating not only the Sunburn Bay<sup>TM</sup> logo, he created
+                        many of the parks shops and ride signs, bringing fun and joy to the park's atmosphere.
+                    </p>
+                </div>
+                <div class="imgalign-left">
+                    <p class="para-small">
+                        <b><a target="_blank" class="black-link"  href="https://twitter.com/shoreboundmusic">Shorebound | Audio Engineer</a><br /></b>
+                        Shorebound worked with the architecture team to create the perfect sounds to aid in your vacation experience. Listen to the soft melodies in our exoctic cave areas,
+                        or the fun upbeat tunes while you grab a bite to eat, Shorebound helped to craft these experiences.
+                    </p>
+                    <img class="minor-pfp" src="https://pbs.twimg.com/profile_images/1299654836460216321/7hDJc_Wj_400x400.jpg" width="400" />
+                </div>
+                <div class="imgalign-right">
+                    <img class="minor-pfp" src="https://scontent-ort2-1.cdninstagram.com/v/t51.2885-19/25017942_182576212482910_293824901767233536_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_ohc=GMapX6f99HcAX8iIsIg&oh=c2b21a1450740ced5e485a2b42067162&oe=5F98649C" width="400" />
+                    <p class="para-small">
+                        <b><a target="_blank" class="black-link"  href="https://www.instagram.com/steintheartist/">Stein | Directory Artwork Creator</a><br /></b>
+                        Stein is another excellent artist who worked to created the logo for the 'Dolphin Directory' and helped to concept out a few of our shop designs.
+                    </p>
+                </div>
+                <h1 class="center bold shadow">Quality Assurance Engineers</h1>
+                <h4 class="center bold">
+                    This is a list to thank those who participated in early screenings of the park, and helped it to become the fantastic waterpark
+                    that it is today!
+                </h4>
+                <p class="para-small">
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Seth</b><br />
+                        <b class="center bold shadow center-text">Squidski</b><br />
+                        <b class="center bold shadow center-text">Slimek</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">T-R3x3r</b><br />
+                        <b class="center bold shadow center-text">Peake</b><br />
+                        <b class="center bold shadow center-text">Abp</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Sumo</b><br />
+                        <b class="center bold shadow center-text">Alfred</b><br />
+                        <b class="center bold shadow center-text">Xayir</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Ynel</b><br />
+                        <b class="center bold shadow center-text">Kale</b><br />
+                        <b class="center bold shadow center-text">Sir Thomas</b><br />
+                    </div><br />
+                    <div class="dual-item-list">
+                        <b class="center bold shadow center-text">Celery</b><br />
+                        <b class="center bold shadow center-text">Cosmo</b><br />
+                        <b class="center bold shadow center-text">MrPotato44</b><br />
+                    </div><br />
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="outro center"></div>
-
+    <div class="outro center">
+        <p class="center-text good-font">Website designed and written by <a target="_blank" class="white-link" href="http://corykoseck.com">Cory Koseck</a><br />
+        Misc artwork created by <a target="_blank" class="white-link" href="">Courtney Stephens</a></p>
+    </div>
 
     <script>
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 
-        let countDown = new Date('Sep 28, 2020 16:00:00').getTime(),
-            x = setInterval(function () {
+    <script>
+        function SwitchSlide(index) {
+            var aboutUs = document.getElementById("AboutUs");
+            var entertainment = document.getElementById("Entertainment");
+            var location = document.getElementById("Location");
+            var list = [entertainment, location, aboutUs];
+            for (var i = 0; i < list.length; i++) {
+                if (i == index) {
+                    list[i].classList.add("intro-text-pressed");
+                    list[i].scrollIntoView();
+                }
+                else {
+                    if (list[i].classList.contains("intro-text-pressed")) {
+                        list[i].classList.remove("intro-text-pressed");
+                    }
+                }
+            }
 
-                let now = new Date().getTime(),
-                    distance = countDown - now;
-
-                document.getElementById('days').innerText = Math.floor(distance / (day)),
-                    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-                //do something later when date is reached
-                //if (distance < 0) {
-                //  clearInterval(x);
-                //  'IT'S MY BIRTHDAY!;
-                //}
-
-            }, second)
+            var car = $(".main-display").data('carousel');
+            car.toSlide(index);
+        }
     </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
